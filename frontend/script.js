@@ -1,5 +1,5 @@
 // Sesuaikan dengan port backend yang sudah kita ubah tadi
-const API_URL = 'https://backend-notes-73763759634.us-central1.run.app';
+const API_URL = 'https://backend-notes-73763759634.us-central1.run.app/notes';
 
 const noteForm = document.getElementById('noteForm');
 const judulInput = document.getElementById('judul');
