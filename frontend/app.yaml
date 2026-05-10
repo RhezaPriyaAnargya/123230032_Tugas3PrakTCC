@@ -1,5 +1,5 @@
 runtime: nodejs20
-service: frontend-rheza
+service: default
 
 handlers:
 - url: /(.*)
