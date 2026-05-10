@@ -1,9 +1,8 @@
 steps:
-  # Deploy ke App Engine (Menambahkan dir: 'frontend')
+  # Deploy ke App Engine (Menambahkan --quiet)
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     dir: 'frontend'
-    args: ['gcloud', 'app', 'deploy', 'app.yaml']
+    args: ['gcloud', 'app', 'deploy', 'app.yaml', '--quiet']
 
-# TAMBAHKAN INI DI PALING BAWAH:
 options:
   logging: CLOUD_LOGGING_ONLY
