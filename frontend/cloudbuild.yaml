@@ -1,0 +1,4 @@
+steps:
+  # Deploy ke App Engine menggunakan gcloud
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    args: ['gcloud', 'app', 'deploy', 'app.yaml']

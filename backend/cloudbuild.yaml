@@ -1,0 +1,21 @@
+steps:
+  # 1. Build Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/backend-notes', '.']
+  
+  # 2. Push image ke Container Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/backend-notes']
+  
+  # 3. Deploy ke Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'backend-notes'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/backend-notes'
+      - '--region'
+      - 'us-central1'
+      - '--allow-unauthenticated'
