@@ -2,10 +2,12 @@ runtime: nodejs20
 service: default
 
 handlers:
-- url: /(.*)
-  static_files: \1
-  upload: (.*)
+  # 1. Aturan untuk halaman utama (WAJIB DI ATAS)
+  - url: /
+    static_files: index.html
+    upload: index.html
 
-- url: /
-  static_files: index.html
-  upload: index.html
+  # 2. Aturan untuk file lainnya (script.js, style.css, dll)
+  - url: /(.*)
+    static_files: \1
+    upload: (.*)
