@@ -1,5 +1,5 @@
 runtime: nodejs20
-service: default
+service: fe-rheza-123230032
 
 handlers:
   # 1. Aturan untuk halaman utama (WAJIB DI ATAS)
