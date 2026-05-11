@@ -75,4 +75,4 @@ Aplikasi ini dapat melakukan manipulasi data secara *real-time* ke basis data Cl
 *(Catatan: Silakan klik tautan di bawah ini untuk menguji aplikasi secara langsung)*
 
 * **Frontend (App Engine):** https://fe-rheza-123230032-dot-e-44-488914.uc.r.appspot.com/
-* **Backend API (Cloud Run):** [Masukkan URL backend kamu di sini, contoh: https://backend-notes-xxxxx.run.app/notes]
+* **Backend API (Cloud Run):** https://backend-notes-rheza-73763759634.us-central1.run.app/notes
